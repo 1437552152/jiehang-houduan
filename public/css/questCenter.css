@@ -1,0 +1,134 @@
+.per{
+	width: 1200px;
+	margin: 0 auto;
+}
+.ser {
+	width:100%;
+	/*max-width:1200px;*/
+	margin:auto;
+	background-color:white;
+	padding:15px 0;
+}
+.ser_list {
+	width:100%;
+	padding:5px 0;
+	margin:auto;
+	transition:all ease .4s;
+	border-bottom: 1px dashed #dddddd;
+}
+.ser_list span{
+	float: left;
+	position: relative;
+	margin-top: 7px;
+	display: block;
+	border-radius: 3px;
+	font-size: 16px;
+	height: 20px;
+	line-height: 20px;
+	width: 20px;
+	color: #fff;
+	margin-right: 9px;
+	text-align: center;
+}
+.question span{
+	background: #6eb92b;
+}
+.answer{
+	font-size: 14px;
+}
+.answer p{
+	float: left;
+	display: block;
+	width: 95%;
+}
+.answer span{
+	background: #ff992d;
+	display: block;
+}
+.question {
+	line-height:38px;
+	color:#333333;
+}
+.answer {
+	/*display:none;*/
+	line-height:38px;
+	color:#666666;
+	transition:all ease .4s;
+	display: block;
+}
+/*.ser_list:hover {background-color:#f8f8f8;padding-bottom:2%;}*/
+/*.ser_list:hover .answer {display:block;}*/
+.inquire{
+	width: 30%;
+	margin: 0 5%;
+	padding-top: 50px;
+}
+.inquire p {
+	color: #337ab7;
+	font-size: 35px;
+	text-align: center;
+	width: 316px;
+	line-height: 104px;
+}
+.form_div {
+	width: 316px;
+}
+.form_div input {
+	width: 316px;
+	height: 35px;
+	border: 1px solid #dddddd;
+	box-sizing: border-box;
+	line-height: 35px;
+	padding: 0 15px;
+	margin-bottom: 20px;
+	background: none;
+	color: #333333;
+}
+.form_div textarea {
+	width: 316px;
+	height: 100px;
+	border: 1px solid #dddddd;
+	box-sizing: border-box;
+	line-height: 35px;
+	padding: 0 15px;
+	margin-bottom: 20px;
+	background: none;
+}
+.form_div button {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	width: 160px;
+	margin: 0 auto;
+	background: #FA5349;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	color: #ffffff;
+	font-size: 16px;
+	border: 0;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.per_two {
+	width: 60%;
+}
+.per_two h6{
+	width: 94%;
+	padding: 0 2%;
+	font-size: 24px;
+	font-weight: 400;
+	padding-top: 15px;
+}
+.time_question{
+	font-size: 12px;
+	color: #999999;
+	padding-left: 30px;
+	padding-bottom: 5px;
+	text-align: right;
+	width: 95%;
+}

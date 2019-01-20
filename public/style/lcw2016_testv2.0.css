@@ -1,0 +1,358 @@
+﻿@charset "utf-8";
+
+/* CSS Document */
+
+
+/**css ini**/
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+button,
+select,
+option,
+textarea,
+p,
+blockquote,
+th,
+td {
+	padding: 0;
+	margin: 0;
+	font: 12px/1.5 "Microsoft Yahei", tahoma, arial, "Hiragino Sans GB", sans-serif;
+	word-break: break-all;
+	word-wrap: break-word;
+	font-weight: 400;
+}
+
+img,
+fieldset {
+	border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var,
+i {
+	font-weight: normal;
+	font-style: normal;
+}
+
+ol,
+ul,
+li {
+	list-style: none;
+}
+
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li {
+	zoom: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	font-size: 100%;
+}
+
+body {
+	min-width: 980px
+}
+
+
+/*fix*/
+
+.clear,
+.clearfix {
+	zoom: 1
+}
+
+.clear:after,
+.clearfix:after {
+	content: ' ';
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden
+}
+
+
+/**General Settings**/
+
+body {
+	color: #5d5d5d;
+	background: #ffffff;
+}
+
+a {
+	color: #414141;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #ff6c00;
+}
+
+
+/*捷航，服务每一份留学梦*/
+
+.lcwIndexCont {
+	margin: 0 auto;
+	position: relative;
+	width: 100%;
+}
+
+.container {
+	position: relative;
+	min-width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.section {
+	text-align: center;
+	background-position: 50% 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.section strong,
+.section h2 {
+	padding: 40px 0 20px;
+	font-size: 30px;
+	line-height: 1;
+	text-align: center;
+	display: block;
+}
+
+.section .s-line {
+	margin-bottom: 38px;
+}
+
+.s-line {
+	width: 200px;
+	height: 3px;
+	background: #fb534a;
+	display: inline-block;
+}
+
+.searchBoxs {
+	width: 99%;
+	height: 34px;
+	border: 1px solid #d7d7d7;
+	float: left;
+	background: white;
+	position: relative;
+	margin-top: 20px;
+	border-radius: 3px;
+}
+
+.searchBoxs .submitIcon {
+	background: url(../images/alldericon1.png) no-repeat;
+	height: 20px;
+	width: 20px;
+	border: 0;
+	position: absolute;
+	left: 11px;
+	top: 8px;
+	outline: none;
+	text-indent: -500em;
+	border-radius: 0;
+}
+
+.searchBoxs .seCon {
+	color: #999999;
+	width: 328px;
+	padding: 4px 8px;
+	height: 26px;
+	border: 0;
+	outline: none;
+	position: absolute;
+	left: 32px;
+	top: 0;
+	font-size: 12px;
+}
+
+.indexSearchBoxs {
+	width: 513px;
+}
+
+.seWrap {
+	cursor: pointer;
+	position: absolute;
+	border: 0;
+	outline: none;
+	right: 75px;
+	top: 3px;
+	background: #ffffff;
+}
+
+.seWrap p {
+	display: block;
+	line-height: 31px;
+	font-size: 12px;
+	color: #646464;
+	width: 42px;
+	padding: 0 10px;
+	background: white url(../images/alldericon2.png) no-repeat right 10px;
+}
+
+.seWrap p.myhover {
+	background: white url(../images/alldericon3.png) no-repeat right 9px;
+}
+
+.seWrap p.selectNew {
+	display: none;
+	border: 1px solid #d7d7d7;
+	border-top: none;
+	background: none;
+	width: 40px;
+}
+
+.lcw-search .searchBoxs .searchKeyBtn {
+	width: 66px;
+	height: 26px;
+	background: none;
+	color: #ff8000;
+	cursor: pointer;
+	border: none;
+	padding: 0;
+	position: absolute;
+	text-indent: 0px;
+	border-radius: 0;
+	right: 0;
+	top: 3px;
+	border-left: 1px solid #e7e7e7;
+	font-size: 16px;
+}
+
+.zhistb {
+	max-width: 950px;
+	margin: 0 auto;
+	height: 78px;
+	background: url(../images/tubudi-06.png) no-repeat;
+	;
+}
+
+.tabnav ul {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: none;
+}
+
+.tabnav ul li,
+.defaInUp li {
+	float: left;
+}
+
+.section2,
+.section4,
+.section6 {
+	background-color: #F5F5F5;
+}
+
+.btnc {
+	font-size: 14px;
+	color: #ff8000;
+	display: block;
+	margin-bottom: 18px;
+}
+
+.defaInUp,
+.s7a1m {
+	max-width: 1200px;
+	margin: 0 auto 35px;
+	overflow: hidden;
+}
+
+.defaInUp li {
+	background-color: #fff;
+    text-align: center;
+    border: 1px solid #eee;
+    padding: 15px 10px;
+    border-radius: 10px;
+    margin-right: 33px;
+    box-shadow: 0px 0px 8px #eee;
+    width: 20%;
+    transition: all 0.35s ease-in-out 0s;
+    -webkit-transition: all 0.35s ease-in-out 0s;
+    overflow: hidden;
+}
+.defaInUp li:hover{  
+   -webkit-box-shadow: 0 15px 30px #000;transition:0.2s;
+ box-shadow: 0 15px 30px rgba(0,0,0,.1);
+  -webkit-transform: translate3d(0,-10px,0);
+ transform: translate3d(0,-2px,0);
+ border-radius: 2px
+}
+
+.colxsy{
+	margin-top: 30px;
+}
+
+
+.name-co {
+	width: 100%;
+	height: 137px;
+	background: url(../images/tubudi-07.png) no-repeat center;
+}
+
+.name-co2 {
+	background: url(../images/tubudi-08.png) no-repeat center;
+}
+
+.name-co3 {
+	background: url(../images/tubudi-09.png) no-repeat center;
+}
+
+.name-co4 {
+	background: url(../images/tubudi-10.png) no-repeat center;
+}
+
+.conone {
+	overflow: hidden;
+}
+
+.conone h3 {
+	color: #5a60ec;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.conone p {
+	line-height: 22px;
+	color: #999999;
+}

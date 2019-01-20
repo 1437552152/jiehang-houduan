@@ -1,0 +1,39 @@
+<div class="top">
+        <div class="w1200">
+            <a href="index.html" title="捷航教育科技有限公司" class="pull-left">
+                <div class="logo"><img src="img/logo.png"></div>
+            </a>
+            <ul class="navhead">
+                    <li class="active">
+                        <a href="index.html">首页</a>
+                    </li>
+                    {{ list }}
+                    {% for item in list %}
+                    <li>
+                        <span>{{ item.typeid }}</span>
+                        <ul>
+                                {% for sing in item.countrylist %}
+                            <li>
+                                <a href="'country.html?id='+sing.Id">{{ sing.country }}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    {% endfor %}							
+                    <li>
+                        <a href="plan.html">留学服务</a>
+                    </li>
+                    <li>
+                        <a href="questCenter.html">答疑中心</a>
+                    </li>
+                    <li>
+                        <a href="about.html?id=1">公司简介</a>
+                    </li>
+                    <div class="clearfix"></div>
+                </ul>
+            <div class="phone pull-right">
+                <p>咨询热线:15301813081</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>

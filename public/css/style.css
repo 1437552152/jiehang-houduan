@@ -1,0 +1,129 @@
+.see_more p.list {
+    width: 1140px;
+    margin: 30px auto 0
+}
+
+.see_more p.list a {
+    display: block;
+    width: 249px;
+    font: 18px/75px "微软雅黑";
+    border: 1px dashed #959595;
+    float: left;
+    padding-left: 115px;
+    margin-right: 21px;
+    margin-bottom: 20px;
+    outline: 0;
+    color: #000;
+    text-decoration: none;
+}
+
+.see_more p.list a.one {
+    background: url(../img/jiehang_liuxue_zhc_17.png) 40px -3px no-repeat
+}
+
+.see_more p.list a.one:hover {
+    background: url(../img/jiehang_liuxue_zhc_17.png) 40px -3px no-repeat #e0f0ff
+}
+
+.see_more p.list a.two {
+    background: url(../img/jiehang_liuxue_zhc_17.png) -346px -3px no-repeat
+}
+
+.see_more p.list a.two:hover {
+    background: url(../img/jiehang_liuxue_zhc_17.png) -346px -3px no-repeat #e0f0ff
+}
+
+.see_more p.list a.three {
+    background: url(../img/jiehang_liuxue_zhc_17.png) -733px -3px no-repeat;
+    margin-right: 0
+}
+
+.see_more p.list a.three:hover {
+    background: url(../img/jiehang_liuxue_zhc_17.png) -733px -3px no-repeat #e0f0ff;
+    margin-right: 0
+}
+
+.see_more p.list a.four {
+    background: url(../img/jiehang_liuxue_zhc_17.png) 40px -144px no-repeat
+}
+
+.see_more p.list a.four:hover {
+    background: url(../img/jiehang_liuxue_zhc_17.png) 40px -144px no-repeat #e0f0ff
+}
+
+.see_more p.list a.five {
+    background: url(../img/jiehang_liuxue_zhc_17.png) -336px -134px no-repeat
+}
+
+.see_more p.list a.five:hover {
+    background: url(../img/jiehang_liuxue_zhc_17.png) -336px -134px no-repeat #e0f0ff
+}
+
+.see_more p.list a.six {
+    background: url(../img/jiehang_liuxue_zhc_17.png) -733px -129px no-repeat;
+    margin-right: 0
+}
+
+.see_more p.list a.six:hover {
+    background: url(../img/jiehang_liuxue_zhc_17.png) -733px -129px no-repeat #e0f0ff;
+    margin-right: 0
+}
+
+.see_more p.list a.seven {
+    background: url(../img/jiehang_liuxue_zhc_17.png) 40px -286px no-repeat
+}
+
+.see_more p.list a.seven:hover {
+    background: url(../img/jiehang_liuxue_zhc_17.png) 40px -286px no-repeat #e0f0ff
+}
+
+.see_more p.list a.eight {
+    background: url(../img/jiehang_liuxue_zhc_17.png) -336px -269px no-repeat
+}
+
+.see_more p.list a.eight:hover {
+    background: url(../img/jiehang_liuxue_zhc_17.png) -336px -269px no-repeat #e0f0ff
+}
+
+.see_more p.list a.nine {
+    background: url(../img/jiehang_liuxue_zhc_17.png) -733px -263px no-repeat;
+    margin-right: 0
+}
+
+.see_more p.list a.nine:hover {
+    background: url(../img/jiehang_liuxue_zhc_17.png) -733px -263px no-repeat #e0f0ff;
+    margin-right: 0
+}
+
+.see_more p.list a.ten {
+    background: url(../img/jiehang_liuxue_zhc_17.png) 40px -430px no-repeat
+}
+
+.see_more p.list a.ten:hover {
+    background: url(../img/jiehang_liuxue_zhc_17.png) 40px -430px no-repeat #e0f0ff
+}
+
+.see_more p.list a.elewen {
+    background: url(../img/jiehang_liuxue_zhc_17.png) -336px -421px no-repeat
+}
+
+.see_more p.list a.elewen:hover {
+    background: url(../img/jiehang_liuxue_zhc_17.png) -336px -421px no-repeat #e0f0ff
+}
+
+.see_more p.list a.last {
+    margin-right: 0;
+    color: red
+}
+
+.see_more p.list a.last:hover {
+    background: #e0f0ff
+}
+p.guanzhu {
+   width: 500px;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px auto 0;
+    font-weight: bold;
+}
+

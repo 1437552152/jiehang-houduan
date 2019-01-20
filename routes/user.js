@@ -121,25 +121,10 @@ router.post("/liuyan", function (req, res) {
     }
   });
 });
-// 留言列表
-router.get("/liuyan/list", function (req, res) {
-  let sql = "SELECT * FROM MessageBoard where isShow=0 and status=1 limit 8";
-  db.query(sql, function (err, results) {
-    if (err) {
-      res.json({
-        msg: "操作成功",
-        status: "0",
-        data: "操作数据库失败"
-      });
-    } else {
-      res.json({
-        msg: "操作成功",
-        status: "200",
-        data: results
-      });
-    }
-  });
-});
+
+
+
+
 
 // 公司简介
 router.post("/companyprofile", function (req, res) {
@@ -155,49 +140,6 @@ router.post("/companyprofile", function (req, res) {
     }
   });
 });
-
-// 头部导航国家的获取
-router.get("/getcountry", (req, res) => {
-  let sql = `SELECT * FROM countryconfig   where isShow=0  group by  typeid`;
-  db.query(sql, (err, results) => {
-    if (err) {
-      res.json({
-        msg: "失败",
-        status: "0",
-        msg: err
-      });
-    } else {
-      var getData1 = Promise.all(results.map(item => {
-        let sql = `SELECT * FROM countryconfig   where isShow=0  and  typeid='${
-          item.typeid
-        }'`;
-        return new Promise((resolve, reject) => db.query(sql, (err, respon) => {
-          if (err) {
-            reject(err);
-          } else {
-            resolve({
-              typeid: item.typeid,
-              countrylist: respon
-            });
-          }
-        }));
-      }));
-      getData1.then(function (respon) {
-        res.json({
-          msg: "成功",
-          status: 200,
-          data: respon
-        });
-      }).catch(err => res.json({
-        msg: "失败",
-        status: "0",
-        msg: err
-      }));
-    }
-  });
-});
-
-
 
 // -------------------------------------------------------------------------------------------------------------------------
 // 首页各所学校信息

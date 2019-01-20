@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>答疑中心</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" rel="stylesheet/less" type="text/less" href="less/common.less" />
+  <link rel="stylesheet" rel="stylesheet/css" type="text/css" href="css/questCenter.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.0/css/swiper.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+  <script src="https://cdn.bootcss.com/axios/0.16.2/axios.min.js"></script>
+  <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+
+<body>
+  <div class="box" id="app" v-cloak>
+	{% include "common/header.html" %}
+    <div class="wrap">
+      <!--轮播图-->
+      <div class="swiper-container" style="width: 100%;min-width: 1200px;height:500px">
+        <div class="swiper-wrapper bannerImg">
+          <div class="swiper-slide">
+            <img src="images/banner1.png">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/banner2.jpg">
+          </div>
+
+          <div class="swiper-slide">
+            <img src="images/banner3.jpg">
+          </div>
+
+        </div>
+        <div class="swiper-pagination dotPos"></div>
+      </div>
+    </div>
+
+    <!--周边-->
+    <div class="per">
+      <div class="per_two fl">
+        <h6>常见问题</h6>
+        <div class="ser">
+          {% for item in data %}
+          <div class="ser_list">
+            <div class="question"><span>问</span>
+              <p>{{ item.content }}</p>
+            </div>
+            <div class="answer">
+              <span class="fl">答</span>
+              <p class="fl">{{ item.article }}</p>
+              <div class="clearfix"></div>
+            </div>
+            <p class="time_question">提问日期：{{ item.addtime }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="fr inquire">
+        <p>立即咨询</p>
+        <div class="form_div">
+          <input type="text" placeholder="您的姓名" v-model="formInline.username">
+          <input type="number" placeholder="您的电话" v-model="formInline.phone">
+          <textarea name="" id="" cols="30" rows="10" placeholder="您的问题" v-model="formInline.content"></textarea>
+          <button @click="submit">立即提交</button>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  {% include "common/footer.html" %}
+</body>
+<script src="js/config.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+  window.onload = function () {
+    var vm = new Vue({
+      el: '#app',
+      data: {
+        formInline: {
+          username: null,
+          phone: null,
+          email: null,
+          QQ: null,
+          content: null
+        }
+      },
+      methods: {
+        submit: function () {
+          var that = this;
+          axios({
+            method: 'post',
+            url: "/liuyan",
+            params: that.formInline
+          }).then((res) => {
+            alert(res.data.msg)
+            that.formInline.username = "";
+            that.formInline.phone = "";
+            that.formInline.content = "";
+            //								}
+          })
+        }
+      }
+    })
+  }
+</script>
+</html>

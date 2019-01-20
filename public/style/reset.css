@@ -1,0 +1,253 @@
+﻿
+/* 图片自适应 */
+img {
+    height: auto;
+    width:auto\9; /* ie8 */
+    -ms-interpolation-mode:bicubic;/*为了照顾ie图片缩放失真*/
+}
+ul,ol,li{list-style:none;}
+/* 清零 */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article,
+aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section{
+	margin:0; padding:0; border:none;}
+body{
+	font-family:"微软雅黑",Tahoma,Arial,Roboto,"Droid Sans","Helvetica Neue","Droid Sans Fallback","Heiti SC",sans-self; color:#555; 
+	}
+
+.clearfix{zoom:1;}
+a{text-decoration:none; color:#666; font-family:"微软雅黑",Tahoma,Arial,Roboto,"Droid Sans","Helvetica Neue","Droid Sans Fallback","Heiti SC",sans-self;}
+a:hover{text-decoration:none;}
+
+.ms_yypx {
+  background: #f6f6f6;
+}
+.ms_yypx .px_list {
+  margin: 0 -8.5px;
+}
+.ms_yypx .px_list li {
+  float: left;
+  width: 340px;
+  height: 210px;
+  margin: 0 32px;
+  position: relative;
+}
+.ms_yypx .px_list li:hover .text {
+  height: 240px;
+  background: #595feb;
+  box-shadow: none;
+}
+.ms_yypx .px_list li:hover .text h2 {
+  color: #fff;
+}
+.ms_yypx .px_list li:hover .text span {
+  background: #fff;
+  margin-bottom: 10px;
+}
+.ms_yypx .px_list li .text {
+  width: 240px;
+  height: 120px;
+  padding: 0 25px;
+  background: rgba(255, 255, 255, 0.5);
+  background: #fff\9;
+  position: absolute;
+  left: 50%;
+  margin-left: -145px;
+  bottom: -55px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px 0 #a8a8a8;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.ms_yypx .px_list li .text h2 {
+  font-size: 22px;
+  color: #333;
+  font-weight: normal;
+  text-align: center;
+  padding: 20px 0 15px;
+}
+.ms_yypx .px_list li .text span {
+  width: 50px;
+  height: 2px;
+  display: block;
+  background: #ff8000;
+  margin: 0 auto 45px;
+}
+.ms_yypx .px_list li .text p {
+  line-height: 24px;
+  color: #fff;
+}
+.container{
+    width: 1024px;
+    margin: 0 auto;
+}
+.ms_title {
+  text-align: center;
+  padding: 55px 0 30px;
+}
+.ms_title h2 {
+  font-size: 36px;
+  color: #333;
+  font-weight: normal;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.ms_title h2 span {
+  width: 100px;
+  height: 3px;
+  background: #fb534a;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+}
+.ms_title h3 {
+  font-size: 14px;
+  color: #666;
+  font-weight: normal;
+}
+/*表单*/
+.form{
+	position: relative;
+	top: 30px;
+	width: 960px;
+	margin: 0 auto;
+	background: #f5f5f5;
+	height: 700px;
+}
+.form-tile{
+	position: relative;
+	top: 10px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+.form-tile h1{
+	font-size: 25px;
+	
+}
+.form-input {
+	margin-top: 10px;
+	height: 50px;
+	margin-bottom: 20px;
+}
+.form-input-left {
+	width: 20%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	color: #000000;
+	float: left;
+	text-align: center;
+	
+}
+.form-input-right {
+	height: 40px;
+	width: 80%;
+	float: right;
+}
+#username {
+	height: 50px;
+	width: 80%;
+	font-size: 15px;
+	border-radius: 5px;
+}
+input::-webkit-input-placeholder {     
+          letter-spacing:8px;
+          text-align: center;
+}
+.form-foot{
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	width: 200px;
+	margin: 0 auto;
+	background: #FA5349;
+	border-radius: 5px;
+}
+.form-foot span{
+	font-size: 18px;
+	color: #fff;
+}
+.news{
+	position: relative;
+	top: 40px;
+	width: 1200px;
+	margin: 0 auto;
+	height: 550px;
+	background: #f5f5f5;
+}
+.news-til h1{
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 30px;
+	padding-top: 30px;
+	
+}
+.news-list {
+	padding-top: 20px;
+	width: 700px;
+	margin: 0 auto;
+	height: 50px;
+	text-align: center;
+}
+.news-list li{
+	width: 100px;
+	float: left;
+	line-height: 50px;
+	display: block;
+}
+.news-list li a{
+	font-size: 18px;
+	font-weight: 700;
+}
+.news-temp {
+	margin-top: 20px;
+	height: 300px;
+}
+.news-temp li{
+	width: 22.9%;
+	margin: 0 12px;
+	
+	float: left;
+}
+.news-temp-img {
+	height: 200px;
+	width: 100%;
+}
+.news-temp-img img{
+	width: 100%;
+	height: 100%;
+}
+.news-temp-list p{
+	height: 20px;
+	width: 100%;
+	line-height: 20px;
+	margin-top: 13px;
+	overflow: hidden;
+	
+}
+.news-temp-list p a{
+	font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
